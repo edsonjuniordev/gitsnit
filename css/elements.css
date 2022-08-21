@@ -1,0 +1,27 @@
+p {
+    color: #FFF;
+    font-family: 'Roboto Mono', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: justify;
+}
+
+h1 {
+    padding-left: 15px;
+    color: #64e688;
+    font-family: 'Roboto Mono', sans-serif;
+    font-size: 50px;
+    font-weight: 700;   
+}
+
+h2,h3 {
+    color: #FFF;
+    font-family: 'Roboto Mono', sans-serif;
+    font-size: 20px;
+    font-weight: 500;   
+    padding-top: 25px;
+}
+
+h3 {
+    font-size: 16px;
+}
