@@ -1,0 +1,17 @@
+body {
+    background-color:#070707;
+    font-family: 'Roboto Mono', sans-serif;
+    color: #FFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+hr {
+	border: 0;
+	border-top: 1px solid #64e688;
+    padding-bottom: 15px;
+}

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/elements.css">
+</head>
+
+<body>
+    <section class="section">
+        <article class="article">
+            <article class="title">
+                <img class="icon" src="/assets/img/logo_git.png" alt="Logo do git">
+                <h1>Git</h1>
+            </article>
+
+            <p>
+                Antes de abordar o assunto sobre o Git, é importante definir o conceito de controle de versão.
+            </p>
+
+            <h2>
+                Sistema de controle de versão
+            </h2>
+            <hr>
+            <p>
+                Trata-se de um sistema responsável por registrar as alterações realizadas em um ou mais arquivos ao
+                longo do tempo. Dessa forma, é possível acessar versões anteriores de determinados arquivos ou projetos,
+                verificar quais mudanças foram realizadas e as informações sobre essas alterações.
+
+            </p>
+
+            <p>
+                Ao longo da história, diversos sistemas de controle de versão foram desenvolvidos, com a intenção de
+                facilitar o gerenciamento dos arquivos. Dentre eles, têm-se os sistemas locais, centralizados e
+                distribuídos.
+            </p>
+
+            <h3>
+                >> Sistemas Locais de Controle de Versão
+            </h3>
+
+            <p>
+                Como o nome sugere, esse sistema foi desenvolvido para atuar localmente, por meio de um banco de dados
+                simples que mantém todas as alterações nos arquivos sob controle de revisão.
+            </p>
+
+            <div class="wrapper">
+                <img class="intro-img" src="/assets/img/local.png" alt="Imagem controle de versão local">
+            </div>
+
+            <p>
+                O Revision Control System (RCS) foi um dos sistemas mais populares. Ele atua guardando um conjunto de
+                patches (alterações realizadas nos arquivos) em um formato especial no disco. Dessa forma, é possível
+                recriar um determinado arquivo em qualquer ponto no tempo, a partir da adição de todos os patches
+                (alterações).
+            </p>
+
+            <h3>
+                >> Sistemas Centralizados de Controle de Versão
+            </h3>
+
+            <p>
+                Foram desenvolvidos para lidar com a colaboração entre um time de desenvolvedores.
+            </p>
+
+            <p>
+                Estes sistemas, tais como CVS, Subversion e Perforce, são baseados em cliente-servidor, ou seja, eles
+                tem um servidor central com todos os arquivos de controle de versão, e as máquinas dos clientes que
+                estão conectadas a esse servidor.
+            </p>
+
+            <p>
+                Quando um membro da equipe termina de executar sua alteração, ele deve conectar-se ao servidor e
+                realizar um commit, para que os arquivos alterados sejam armazenados.
+            </p>
+
+            <p>
+                Uma desvantagem desse processo é a possibilidade do servidor central ficar fora do ar, impedindo o
+                trabalho conjunto dos desenvolvedores da equipe e a geração de novas versões do projeto.
+            </p>
+
+            <div class="wrapper">
+                <img class="intro-img" src="/assets/img/centralized.png" alt="Imagem controle de versão centralizado">
+            </div>
+
+            <h3>
+                >> Sistemas Distribuídos de Controle de Versão
+            </h3>
+
+            <p>
+                Esses sistemas não dependem de um único servidor central, ao invés disso, todas as versões do
+                código-fonte são duplicadas na máquina do cliente. Com isso, o membro do time passa a ter acesso à base
+                de dados completa do projeto, sendo possível a geração de novas versões e a visualização de versões mais
+                antigas. Alguns dos Sistemas Distribuídos de Controle de Versão (DVCS) são: Git, Mercurial, Bazaar e
+                Darcs.
+            </p>
+
+            <div class="wrapper -second">
+                <img class="intro-img" src="/assets/img/distributed.png" alt="Imagem controle de versão distribuído">
+            </div>
+
+            <h2>
+                O que é Git?
+            </h2>
+
+            <hr>
+
+            <p>
+                Em resumo, o Git é um sistema distribuído de controle de versão, que auxilia o acompanhamento das
+                alterações de código. Além disso, ele permite que várias pessoas trabalhem simultaneamente no mesmo
+                projeto e até nos mesmos arquivos.
+            </p>
+
+            <h3>
+                >> Funcionamento
+            </h3>
+            <p>
+                O Git possui 3 seções principais: a área de trabalho, a área de preparo e o repositório.
+            </p>
+
+            <div class="wrapper">
+                <img class="intro-img" src="/assets/img/areas.png"
+                    alt="Imagem  diretório de trabalho, área de preparo, e o diretório Git.">
+            </div>
+
+            <p>
+                A área de trabalho (Working Directory) é o checkout de uma versão do projeto. Corresponde aos arquivos e
+                diretórios visíveis e alteráveis.
+            </p>
+
+            <p>
+                Antes de gerar uma nova versão, ou seja, antes de realizar o commit, os arquivos alterados são
+                adicionados em uma área de preparo (Staging Area).
+            </p>
+
+            <p>
+                Finalmente, poderá ser executado um commit, que irá considerar todas as alterações que estiverem na área
+                de preparo. Isso armazenará as imagens de arquivos de forma permanente no diretório do Git.
+            </p>
+
+            <h2>
+                Utilizando o Git
+            </h2>
+            <hr>
+
+            <p>
+                Alguns comandos são necessários para que um repositŕio seja criado e tenhas suas alterações salvas. O
+                primeiro passo é iniciar um novo repositório git no diretório de trabalho. Esta tarefa é realizada pelo
+                comando <b>git init</b>, que cria uma pasta do repositório <b>.git</b>, independente da existência de
+                arquivos no
+                diretório.
+            </p>
+
+            <div class="wrapper -third">
+                <img class="example-img" src="assets/img/git_init.png" alt="Imagem comando git init">
+            </div>
+
+            <p>
+                Toda vez que um arquivo for criado, deletado ou alterado, é preciso informar ao git para rastreá-lo e
+                adicioná-lo à área de preparo (staging area). Caso contrário, os arquivos em que ocorreram mudanças não
+                serão adicionados quando as alterações forem enviadas. O comando responsável por isso é o <b>git
+                    add</b>, que
+                possui algumas variações.
+            </p>
+
+            <p>
+                Caso seja desejável a adição de um único arquivo no próximo commit:
+            </p>
+
+            <p>
+                <b>
+                    $ git add "file-name"
+                </b>
+            </p>
+
+            <p>
+                Caso seja necessário a adição de todos os arquivos que foram alterados:
+            </p>
+            <p>
+                <b>
+                    $ git add -A or git add .
+                </b>
+            </p>
+
+            <p>
+                Após isso, com o comando <b>git status</b> é possível obter diversas informações sobre o repositório,
+                como:
+            </p>
+
+            <ul>
+                <li>A branche atual.</li>
+                <li>Se a branche está atualizada.</li>
+                <li>Se há algo que precise ser commitado.</li>
+                <li>Se existem arquivos criados , modificados ou excluídos.</li>
+            </ul>
+
+            <p>
+                Entre outras informações.
+            </p>
+
+            <div class="wrapper -third">
+                <img class="example2-img" src="assets/img/git_add_status.png" alt="Imagem comando git add e git status">
+            </div>
+
+            <p>
+                Por fim, o comando <b>git commit</b> é utilizado para salvar as alterações. Toda vez que as alterações
+                forem
+                “commitadas”, será necessária também a inclusão de uma mensagem para descrever brevemente as alterações
+                feitas. Isso ajuda outros membros do time a entender rapidamente que mudanças foram realizadas.
+            </p>
+
+            <div class="wrapper -third">
+                <img class="example2-img" src="assets/img/git_commit.png" alt="Imagem comando git commit">
+            </div>
+
+            <p>
+                Pronto, agora o projeto é um repositório git salvo na base de dados local.
+            </p>
+
+            <h3>
+                Referências
+            </h3>
+
+            <p>
+                Chacon, Scott e Straub, Ben. Pro Git. Segunda edição. Apress.
+            </p>
+
+            <footer>
+
+            </footer>
+        </article>
+    </section>
+</body>
+
+</html>

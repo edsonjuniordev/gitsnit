@@ -1,0 +1,52 @@
+.section {
+    padding: 15px;
+    padding-top: 100px;
+}
+
+.article{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.icon {
+    width: 100%;
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding-bottom: 50px;
+}
+
+.wrapper {
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 25px;
+}
+
+.wrapper.-second {
+    height: 600px;
+}
+
+.wrapper.-third {
+    height: auto;
+    width: 800px;
+}
+
+.intro-img {
+    width: auto;
+    max-height: 100%;
+}
+
+.example-img {
+    max-width: 100%;
+}
+
+.example2-img {
+    max-width: 70%;
+}
