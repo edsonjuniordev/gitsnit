@@ -33,7 +33,3 @@ As the project was developed with the aim of exemplifying in a practical way the
 * **Welton Santana de Andrade Junior** - *Feature development* - [weltonsantana](https://github.com/weltonSantana)
 
 You can also see the list of all [contributors](https://github.com/EdJunior0/gitsnit/graphs/contributors) who participated in this project.
-
-## 📄 Licença
-
-Este projeto está sob a licença (sua licença) - veja o arquivo [LICENSE.md](https://github.com/usuario/projeto/licenca) para detalhes.
