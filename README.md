@@ -29,7 +29,7 @@ As the project was developed with the aim of exemplifying in a practical way the
 ## ✒️ Authors
 
 * **Antonia Iana Sampaio da Silva** - *Feature development* - [ianasampaio](https://github.com/ianasampaio)
-* **Edson Almeida Silva Júnior** - *Management* - [edjunior0](https://github.com/edjunior0)
+* **Edson Almeida Silva Júnior** - *Management* - [edsonjuniordev](https://github.com/edsonjuniordev)
 * **Welton Santana de Andrade Junior** - *Feature development* - [weltonsantana](https://github.com/weltonSantana)
 
 You can also see the list of all [contributors](https://github.com/EdJunior0/gitsnit/graphs/contributors) who participated in this project.
